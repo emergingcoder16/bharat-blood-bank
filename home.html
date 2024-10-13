@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+       
+        @media(min-aspect-ratio:16/9){
+    video{
+        width:100%;
+        height:auto;
+    }
+}
+@media(max-aspect-ratio:16/9){
+    video{
+        width:auto;
+        height:100%;
+    }
+}
+
+#n01{
+    height: 50px;
+    background-color: black;
+    font-size: 25px;
+   
+}
+
+#n01 a{
+   position: relative;
+   font-size: 1.1em;
+    color: white;
+    margin-left: 40px;
+    font-weight: 500;
+}
+
+#n01 a::after{
+    content:'';
+    position:absolute;
+    left: 0;
+   bottom: -5px;
+    height:3px;
+    width: 100%;
+    background-color:white;
+    border-radius:5%;
+    transform: scaleX(0);
+    transition: transform .5s;
+    
+}
+
+#n01 a:hover::after{
+    transform: scaleX(1);
+}
+a{
+    margin-left: 40px;
+    color: white;
+    text-decoration: none;
+      
+}
+#text{
+    color:red;
+    font-size: 35px;
+    margin-right:350px;
+    display: inline;
+    
+    padding-left: 30%;
+}
+
+
+ #footer{
+
+     height: 400px;
+     width: 100%;
+     background-color: black;
+     color: white;
+ }
+ .footer-section-contact{
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+ }
+ .footer-section-follow-us{
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+ }
+ .footer-section-follow-us i{
+   font-size: 30px;
+   margin: 10px;
+  
+   
+ }
+
+ .footer-section-additional-info{
+    width: 33%;
+    display: inline-block;
+    text-align: center;
+ }
+ #footer h4{
+    text-align: center;
+ }
+.footer-section-feedback
+{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 25px;
+}
+ #copyright{
+    font-size: 30px;
+    text-align: center;
+    margin-top:75px;
+ }
+ main{
+    height: 1500px;
+ }
+ #about{
+<img src="assets/donationFact.jpg" alt="One Donation Can save upto three lives">
+ }
+ .mar{
+    background-color: red;
+    text-decoration:solid;
+ }
+
+    </style>
+    
+</head>
+<body><div id="n01">
+
+        <h2 id="text"><b>BHARAT BLOOD BANK</b></h2>
+
+    </div>
+
+<div>
+    <img src="home_one.png" style="width:100%;height: 500px;" id="homeimg" >
+</div>
+<div class="mar"><marquee>BHARAT BLOOD BANK </marquee></div><div>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <a target="_blank" class="bubbly-button" href="home.html">HOME</a><BR>
+    <a target="_blank" class="bubbly-button" href="about.html">ABOUT</a><br>
+    <a target="_blank" class="bubbly-button" href="donors reg.html">PATIENT REGISTRATION</a><br>
+    <a target="_blank" class="bubbly-button" href="patient reg.html">DONORS REGISTRATION</a><br>
+    <a target="_blank" class="bubbly-button" href="login.html">LOGIN</a><BR>
+    <a target="_blank" class="bubbly-button" href="profile.html">ABOUT CREATORS</a>
+    </video>
+</body>
+</html><style>
+
+body{
+  font-size: 16px;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  text-align: center;
+  background-color: baby-blue;
+  background-image: url();
+}
+.bubbly-button{
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  display: inline-block;
+  font-size: 1em;
+  padding: 1em 2em;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: $button-bg;
+  color: black;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+  
+  &:focus {
+    outline: 0;
+  }
+  
+  &:before, &:after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 140%;
+    height: 100%;
+    left: -20%;
+    z-index: -1000;
+    transition: all ease-in-out 0.5s;
+    background-repeat: no-repeat;
+  }
+  
+  &:before{
+    display: none;
+    top: -75%;
+    background-image:  
+      radial-gradient(circle, $button-bg 20%, transparent 20%),
+    radial-gradient(circle,  transparent 20%, $button-bg 20%, transparent 30%),
+
+  
+  }
+  
+  &:after{
+    display: none;
+    bottom: -75%;
+    background-image:  
+    radial-gradient(circle, $button-bg 20%, transparent 20%), 
+    
+    radial-gradient(circle,  transparent 10%, $button-bg 15%, transparent 20%),
+     background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+  
+  }
+ 
+  &:active{
+    transform: scale(0.9);
+    background-color: darken($button-bg, 5%);
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+  }
+  
+}
+
+</style>
+    </div>
+<main></main>
+
+<footer id="footer">
+    
+    <div class="footer-content">
+        <div class="footer-section-contact">
+            <h4>Contact Us</h4>
+            <p>Email: info@bharatbloodbank.com</p>
+            <p>Phone: +91 123 456 789</p>
+
+        </div>
+
+        <div class="footer-section-follow-us">
+            <h4>Follow Us</h4>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-facebook-messenger"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-twitter"></i>
+           
+        </div>
+
+        <div class="footer-section-additional-info">
+            <h4>Additional Information</h4>
+            <p><a href="#">Privacy Policy</a></p>
+            <p><a href="#">Terms of Service</a></p>
+        </div>
+
+        <div class="footer-section-feedback">
+            <h5>Feedback</h5>
+            <p>We'd love to hear from you! Share your thoughts and suggestions.</p>
+          
+        </div>
+    </div>
+
+    <div id="copyright">
+        <p>&copy; 2023 Bharat Blood Bank. All rights reserved.</p>
+    </div>
+
+   
+</footer>
+    
+</body>
+<script>
+    function change(){
+        document.getElementById("homeimg").src="home_two.png";
+    }
+    function change1(){
+        document.getElementById("homeimg").src="home_three.png";
+    }
+    function change2(){
+        document.getElementById("homeimg").src="home_one.png";
+    }
+    setInterval(change,2000);
+    setInterval(change1,4000);
+    setInterval(change2,6000);
+</script>
+</html>
+

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="reg.jq">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+
+        #n01{
+            position: relative;
+            height: 450px;
+            width: 400px;
+            border:2px solid black;
+           display: flex;
+           justify-content: center;
+            align-items: center;
+            margin:auto;
+       
+            
+        }
+
+     
+        #n01 h2{
+            text-align: center;
+        }
+        .input{
+            position: relative;
+            width: 100%;
+            height: 50px;
+            border-bottom:1px solid black;
+            margin: 30px;
+        }
+
+        .input label{
+            position: absolute;
+            top: 50%;
+            left: 5px;
+            transform: translateY(-50%);
+            font-size: 1em;
+            font-weight: 500;
+            transition: .5s;
+        }
+
+        .input input:focus~label,
+        .input input:valid~label {
+top:-5px;
+        }
+
+        .input input{
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            font-size: 1em;
+            font-weight: 600;
+        
+        }
+
+
+        .forget{
+            font-size: 0.9em;
+            font-weight: 400;
+            margin-top:-25px;
+            margin-bottom:15px;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 25px;
+        }
+        .forget label input{
+            margin-right: 3px;
+        }
+        .forget a{
+            text-decoration: none;
+        }
+
+        .btn{
+            width: 100%;
+            height:50px;
+            margin-left: 25px;
+            border: none;
+            outline: none;
+            border-radius:5px;
+            background-color:rgb(23, 23, 56);
+            color:aliceblue;
+            font-size: 1.5em;
+            font-weight: 300;
+        }
+
+        .login-register{
+
+            margin-left: 25px;
+            text-align: center;
+        }
+
+
+        .hidden{
+            display: none;
+        }
+        
+       i{
+        position: absolute;
+         top:10px;
+         right: 20px;
+    
+      }
+        
+    </style>
+</head>
+<body>
+
+    <main id="n1">
+
+    <div id="n01">
+        <div class="loginpage">
+            <h2>LOGIN</h2>
+             <form action="#">
+                 <div class="input">
+                    <input type="email" required>
+
+             <i class="fa-regular fa-envelope"></i>
+                    <label>Email</label>
+                 </div>
+                 <div class="input">
+                    <input type="password" required><i class="fa-solid fa-lock"></i>
+                    <label>Password</label>
+                 </div>
+                 <div class="forget">
+                    <label>
+                        <input type="checkbox" required>Remember as
+                    </label>
+                    <a href="#">Forget Password</a>
+
+                 </div>
+                 <button type="submit" class="btn"> Login</button>
+                 <div class="login-register">
+                    <p> don't have an account?
+                        <a href="#" class="register-link" onclick="swap()">Register</a>
+                    </p>
+                    
+                 </div>
+             </form>
+                
+
+        </div>
+
+
+
+        <div class="register">
+            <h2>REGISTATION</h2>
+             <form action="#">
+                <div class="input">
+                    <input type="text" required>
+                    <label>Usser Name</label>
+                    <i class="fa-solid fa-user"></i>
+                 </div>
+                 <div class="input">
+                    <input type="email" required>
+                    <i class="fa-regular fa-envelope"></i>
+                    <label>Email</label>
+                 </div>
+                 <div class="input">
+                    <input type="password" required>
+                    <i class="fa-solid fa-lock"></i>
+                    <label>Password</label>
+                 </div>
+                 <div class="forget">
+                    <label>
+                        <input type="checkbox" required> i agree to the terms and condition
+                    </label>
+                   
+
+                 </div>
+                 <button type="submit" class="btn">register</button>
+                 <div class="login-register">
+                    <p>Already have an account?
+                        <a href="#" class="login-link" onclick="swap2()">Login</a>
+                    </p>
+                    
+                 </div>
+             </form>
+                
+
+        </div>
+           
+    </div>      
+
+
+
+        
+    </main>
+    
+</body>
+
+<script>
+
+   
+        
+   const login=document.querySelector(".loginpage");
+   const register=document.querySelector(".register");
+   login.classList.remove('hidden');
+   register.classList.add('hidden');
+
+   function swap()
+   {
+    login.classList.add('hidden');
+   register.classList.remove('hidden');
+
+   }
+   function swap2()
+   {
+    login.classList.remove('hidden');
+   register.classList.add('hidden');
+
+   }
+
+
+
+   
+
+   
+    
+
+   
+   
+</script>
+</html>

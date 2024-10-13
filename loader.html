@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="loader"> </div>
+    <center><div class="bbb">BBB</div></center>
+
+    <style>
+        .loader {
+  margin: auto;
+  border: 20px solid #EAF0F6;
+  border-radius: 50%;
+  border-top: 20px solid #f83605;
+  width: 200px;
+  height: 200px;
+  animation: spinner 4s linear infinite;
+  
+}
+@keyframes spinner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+ .bbb{
+    font-size: larger;
+    color: #f83605;
+ }
+    </style>
+</body>
+</html>
